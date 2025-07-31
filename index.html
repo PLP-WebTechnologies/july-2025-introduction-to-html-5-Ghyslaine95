@@ -7,3 +7,69 @@
   <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic Elements, Web Development" />
   <title>WELCOME TO MY BASIC WEB PAGE</title>
 </head>
+<body>
+  <header>
+    <h1>WELCOME TO MY BASIC WEB PAGE</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about us" title="Learn about us">About</a></li>
+        <li><a href="#articles" title="Articles about HTML">Articles</a></li>
+        <li><a href="#contact" title="Contact us">Contact</a></li>
+      </ul>
+    </nav>
+   </header>
+
+  
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About us</h2>
+      <p>Basic web page is dedicated to helping developers create cleaner, faster, and more accessible websites using semantic HTML5 techniques.</p>
+    </section>
+
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Articles about HTML</h2>
+      <article>
+        <h3>HTML5 Definition</h3>
+        <p>HTML (HyperText Markup Language): It first appeared in 1991 with the launch of the Web. <br> Its role is to manage
+and organize content. Therefore, it's in HTML that you write what should be displayed on the page: text, links,
+images, etc. <br> For example, you could say: "This is my title, this is my menu, here is the main text of the page, here is an
+image to display, etc."</p>
+      </article>
+      <article>
+        <h3>HTML5 tags</h3>
+        <p>HTML pages are filled with what are called tags. These are invisible onscreen to your visitors, but they
+allow the computer to understand what to display. <br>
+Tags are easy to spot. They are surrounded by "angle brackets," that is, the < and > symbols, like this:
+<tag> <br>
+ What are they for? They indicate the nature of the text they surround. For example, they mean: <br> "This is the
+title of the page," "This is an image," "This is a paragraph of text," etc.
+ </p>
+      </article>
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>SEO, or Search Engine Optimization, is the practice of improving a website's visibility in search engine results pages (SERPs) to attract more organic (unpaid) traffic. <br>
+          It involves optimizing various aspects of a website, including its content, structure, and technical elements, to make it more appealing to both users and search engines.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="/submit" method="post" aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" required aria-required="true"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Basicwebpage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
